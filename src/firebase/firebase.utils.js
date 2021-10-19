@@ -14,6 +14,19 @@ const config={
     measurementId: "G-TWRDKDHP7W"
   };
 
+  const options={
+    apiKey: "AIzaSyDr__Y7cU9htVdm3BMxLKnsxI3mO2CEx5w",
+    authDomain: "crwn-db-aa386.firebaseapp.com",
+    projectId: "crwn-db-aa386",
+    storageBucket: "crwn-db-aa386.appspot.com",
+    messagingSenderId: "996575371063",
+    appId: "1:996575371063:web:16a0d3107faaed871544b2",
+    measurementId: "G-TWRDKDHP7W",
+    messagingSenderId: "996575371063",
+    appId: "1:996575371063:web:16a0d3107faaed871544b2",
+    measurementId: "G-TWRDKDHP7W",
+  };
+
   export const createUserProfileDocument=async(userAuth,additionalData)=>{
     if(!userAuth)return;
     const userRef=firestore.doc(`users/${userAuth.uid}`);
